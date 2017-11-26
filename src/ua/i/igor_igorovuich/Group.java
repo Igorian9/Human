@@ -21,7 +21,7 @@ public class Group {
 			throw new FullGroupException();
 
 		} else {
-			System.err.println("Error! Information about student can't be null");
+			System.err.println("Error! Information about student can't be empty");
 		}
 	}
 
