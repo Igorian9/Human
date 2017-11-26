@@ -18,6 +18,7 @@ public class Main {
 			group.addStudentToGroup(studentTwo);
 			group.addStudentToGroup(studentThree);
 			group.addStudentToGroup(studentFour);
+			group.addStudentToGroup(null);
 		} catch (FullGroupException e) {
 			e.getMessage();
 		}
@@ -25,12 +26,12 @@ public class Main {
 		System.out.println(group);
 		System.out.println();
 
-		System.err.println("I sorted a group!");
+		System.out.println("I sorted a group!");
 		group.sortBySurname();
 		System.out.println(group);
 		System.out.println();
 
-		System.err.println("I found a student!");
+		System.out.println("I found a student!");
 		System.out.println();
 		System.out.println(group.findStudent("May"));
 		System.out.println();
@@ -39,7 +40,7 @@ public class Main {
 		System.out.println();
 
 		group.deleteStudentFromGroup(1);
-		System.err.println("I deleted a student!");
+		System.out.println("I deleted a student!");
 		System.out.println();
 		System.out.println(group);
 

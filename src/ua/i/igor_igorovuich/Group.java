@@ -11,14 +11,18 @@ public class Group {
 	}
 
 	public void addStudentToGroup(Student studInfo) throws FullGroupException {
-		for (int i = 0; i < group.length; i++) {
-			if (group[i] == null) {
-				group[i] = studInfo;
-				return;
+		if (studInfo != null) {
+			for (int i = 0; i < group.length; i++) {
+				if (group[i] == null) {
+					group[i] = studInfo;
+					return;
+				}
 			}
-		}
-		throw new FullGroupException();
+			throw new FullGroupException();
 
+		} else {
+			System.err.println("Error! Information about student can't be null");
+		}
 	}
 
 	public void deleteStudentFromGroup(int number) {
