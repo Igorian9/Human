@@ -54,10 +54,12 @@ public class Group {
 	public void sortBySurname() {
 		Arrays.sort(group, new Comparator<Student>() {
 			public int compare(Student o1, Student o2) {
-				if (o1 == null || o2 == null) {
-					return 0;
-				} else if (o1.getSurname() == null || o2.getSurname() == null) {
+				if (o1 != null && o2 == null) {
 					return 1;
+				} else if (o1 == null && o2 != null) {
+					return -1;
+				}  else if (o1 == null && o2 == null) {
+					return 0;
 				}
 				return o1.getSurname().compareTo(o2.getSurname());
 			}
