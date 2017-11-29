@@ -47,5 +47,7 @@ public class Student extends Human {
 		return super.toString() + ", course = " + course + ", faculty = " + faculty + ", institute = " + institute + "]"
 				+ System.lineSeparator();
 	}
+	
+	
 
 }
