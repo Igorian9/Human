@@ -1,7 +1,6 @@
 package ua.i.igor_igorovuich;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class Group implements Commissar {
@@ -72,6 +71,7 @@ public class Group implements Commissar {
 				: (int) a.getHeight() - (int) b.getHeight());
 	}
 
+	@SuppressWarnings("resource")
 	public int addAge() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student age");
@@ -83,6 +83,7 @@ public class Group implements Commissar {
 		return age;
 	}
 
+	@SuppressWarnings("resource")
 	public double addHeight() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student height");
@@ -94,6 +95,7 @@ public class Group implements Commissar {
 		return height;
 	}
 
+	@SuppressWarnings("resource")
 	public double addWeight() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student weight");
@@ -105,6 +107,7 @@ public class Group implements Commissar {
 		return weight;
 	}
 
+	@SuppressWarnings("resource")
 	public String addSurname() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student surname");
@@ -116,6 +119,7 @@ public class Group implements Commissar {
 		return surname;
 	}
 
+	@SuppressWarnings("resource")
 	public String addName() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student name");
@@ -127,6 +131,7 @@ public class Group implements Commissar {
 		return name;
 	}
 
+	@SuppressWarnings("resource")
 	public String addNationality() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student nationality");
@@ -138,6 +143,7 @@ public class Group implements Commissar {
 		return nationality;
 	}
 
+	@SuppressWarnings("resource")
 	public boolean addSex() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student sex (male or female)");
@@ -154,6 +160,7 @@ public class Group implements Commissar {
 
 	}
 
+	@SuppressWarnings("resource")
 	public int addCourse() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student course");
@@ -165,6 +172,7 @@ public class Group implements Commissar {
 		return course;
 	}
 
+	@SuppressWarnings("resource")
 	public String addFaculty() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student faculty");
@@ -176,6 +184,7 @@ public class Group implements Commissar {
 		return faculty;
 	}
 
+	@SuppressWarnings("resource")
 	public String addInstitute() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter student institute");

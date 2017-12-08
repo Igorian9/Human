@@ -32,6 +32,7 @@ public class Main {
 		getGroupInfo(group);
 	}
 
+	@SuppressWarnings("resource")
 	public static int checkFlag() {
 		Scanner sc = new Scanner(System.in);
 		int flag = 0;
